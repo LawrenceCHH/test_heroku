@@ -3,6 +3,5 @@ const path = require('path');
 const app = express();
 app.use(express.static(__dirname + '/dist/build_test'));
 app.get('/*', function(req,res) {
-res.sendFile(path.join(__dirname+
-'/dist/build_test/index.html'));});
+res.sendFile(path.join(__dirname+'/dist/build_test/index.html'));});
 app.listen(process.env.PORT || 4200);
